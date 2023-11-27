@@ -1,0 +1,39 @@
+{
+  "name": "chickendesktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo No linting configured"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.1.0",
+    "electron": "^27.1.2"
+  },
+  "build": {
+    "appId": "chickendesktop",
+    "productName": "ChickenDesktop",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "Toast512.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "Toast512.png"
+    },
+    "linux": {
+      "target": "deb",
+      "icon": "Toast512.png"
+    }
+  }
+}
